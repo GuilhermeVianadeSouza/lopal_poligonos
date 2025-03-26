@@ -3,6 +3,7 @@ package br.com.engsenai.dao;
 import java.util.Scanner;
 
 import br.com.engsenai.model.Circurferencia;
+import br.com.engsenai.ui.Menu;
 
 public class CircurferenciaDao {
 	public static void criarCircuferencia() {
@@ -17,8 +18,8 @@ public class CircurferenciaDao {
 		circurferencia.setRaio(leitor.nextDouble());
 		circurferencia.mostrarResultados();
 		
-
-		leitor.close();
+		
+		Menu.retornar(leitor, "Guilherme");
 		
 	}
 

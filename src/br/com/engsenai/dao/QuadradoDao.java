@@ -3,6 +3,7 @@ package br.com.engsenai.dao;
 import java.util.Scanner;
 
 import br.com.engsenai.model.Quadrado;
+import br.com.engsenai.ui.Menu;
 
 public class QuadradoDao {
 	
@@ -21,8 +22,9 @@ public class QuadradoDao {
 		quadrado.mostrarResultados();
 		
 		//Fechar o objeto scanner, remover da memória
-		leitor.close();
+		//leitor.close();
 		
-	}
+		Menu.retornar(leitor, "Guilherme");
 
+	}
 }

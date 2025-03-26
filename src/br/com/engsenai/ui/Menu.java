@@ -43,5 +43,23 @@ public class Menu {
 		}
 		
 	}
+	
+	public static void retornar(Scanner leitor, String nome) {
+		String resposta = "";
+
+		
+		while (!resposta.equals("c") || !resposta.equals("S")) {
+			System.out.println(nome + ", digite C para continuar ou S para sair... ");
+		    resposta = leitor.next();
+		}
+		
+		if (resposta.equalsIgnoreCase("c")) {
+		Menu.mostrarMenu();
+		}
+		else if (resposta.equalsIgnoreCase("s")) {
+			System.out.println("Esconda seus objetos valiosos");
+			leitor.close();
+		}
+	}
 
 }

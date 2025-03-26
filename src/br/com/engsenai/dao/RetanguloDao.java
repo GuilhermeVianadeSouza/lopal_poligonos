@@ -3,6 +3,7 @@ package br.com.engsenai.dao;
 import java.util.Scanner;
 
 import br.com.engsenai.model.Retangulo;
+import br.com.engsenai.ui.Menu;
 
 public class RetanguloDao {
 	public static void criarRetangulo() {
@@ -19,7 +20,7 @@ public class RetanguloDao {
 		
 		retangulo.mostrarResultados();
 		
-		leitor.close();
+		Menu.retornar(leitor, "Guilherme");
 		
 	}
 

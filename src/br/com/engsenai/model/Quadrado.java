@@ -11,12 +11,12 @@ public class Quadrado {
 	public double area;
 	public double perimetro;
 	
-	public double calcularArea() {
+	private double calcularArea() {
 		double area =  Math.pow(this.lado, 2);
 		return area;
 	}
 	
-	public double calcularPerimetro() {
+	private double calcularPerimetro() {
 		double perimetro = lado * 4;
 		return perimetro;
 	}

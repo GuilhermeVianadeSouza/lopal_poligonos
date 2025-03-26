@@ -3,6 +3,7 @@ package br.com.engsenai.dao;
 import java.util.Scanner;
 
 import br.com.engsenai.model.Trapezio;
+import br.com.engsenai.ui.Menu;
 
 public class TrapezioDao {
 	
@@ -25,7 +26,7 @@ public class TrapezioDao {
 		
 		trapezio.mostrarResultados();
 		
-		leitor.close();
+		Menu.retornar(leitor, "Guilherme");
 	}
 
 }

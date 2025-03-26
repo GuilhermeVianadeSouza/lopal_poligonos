@@ -3,6 +3,7 @@ package br.com.engsenai.dao;
 import java.util.Scanner;
 
 import br.com.engsenai.model.Triangulo;
+import br.com.engsenai.ui.Menu;
 
 public class TrianguloDao {
 	public static void criarTriangulo() {
@@ -19,7 +20,7 @@ public class TrianguloDao {
 		
 		triangulo.mostrarResultados();
 		
-		leitor.close();
+		Menu.retornar(leitor, "Guilherme");
 		
 	}
 
